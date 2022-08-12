@@ -8,9 +8,10 @@ public class Greeting {
 	public Greeting(Integer id, String greetings) {
 		super();
 		this.id = id;
-		this.greetings = greetings;}
+		this.greetings = greetings;
+	}
 
-	public Integer getId(){
+	public Integer getId() {
 		return id;
 	}
 
