@@ -1,17 +1,21 @@
 # This is a basic workflow to help you get started with Actions
-
-name: Test-GitHub-Actions
-
-
+name: Run Check Style
 on:
   push:
+    branches: [ "main" ]
+  pull_request:
     branches: [ "main" ]
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Run java checkstyle
+        uses: nikitasavinov/checkstyle-action@0.6.0
+        with:
+          level: warning
+          reporter: 'github-pr-check'
+          tool_name: 'CheckStyle'
+          
       - name: Step 1 :Check out Main Branch
         uses: actions/checkout@v3
 
