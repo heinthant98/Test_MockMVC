@@ -23,8 +23,3 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 17
-
-      - name: Step 5:List The Target Directory
-        run: |
-          cd target
-          ls -a
