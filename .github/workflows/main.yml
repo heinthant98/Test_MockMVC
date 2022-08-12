@@ -15,9 +15,9 @@ jobs:
       - name: Run java checkstyle
         uses: nikitasavinov/checkstyle-action@0.6.0
         with:
-          level: 'warning'
+          level: 'error'
           reporter: 'github-pr-check'
-          tool_name: 'CheckStyle'
+          tool_name: 'reviewdog'
 
       - name: Step 2 :Set-up Java Version 17
         uses: actions/setup-java@v1
