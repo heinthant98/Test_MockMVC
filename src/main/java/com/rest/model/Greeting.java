@@ -5,6 +5,9 @@ public class Greeting {
 	private Integer id;
 	private String greetings;
 	
+	
+	
+	
 	public Greeting(Integer id, String greetings) {
 		super();
 		this.id = id;
